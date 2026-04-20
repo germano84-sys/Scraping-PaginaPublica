@@ -5,11 +5,11 @@
 El presente documento describe el procedimiento técnico para realizar Web Scraping sobre fuentes de datos públicas. Se detalla el flujo de trabajo desde la fase de reconocimiento de la estructura del sitio hasta la persistencia de los datos en formato CSV, integrando controles de buenas prácticas para evitar la detección por sistemas de protección (WAF) y garantizar la integridad de la información obtenida.
 
 ## Objetivos
-Desde un enfoque de Integridad y Trazabilidad: Diseñar e implementar una metodología de extracción automatizada que garantice la integridad de los datos estructurados mediante el uso de funciones hash (SHA-256) y logs de auditoría, asegurando que la información procesada y almacenada en formato CSV sea una copia fiel y no repudiable de la fuente pública
+Integridad y Trazabilidad: Diseñar e implementar una metodología de extracción automatizada que garantice la integridad de los datos estructurados mediante el uso de funciones hash (SHA-256) y logs de auditoría, asegurando que la información procesada y almacenada en formato CSV sea una copia fiel y no repudiable de la fuente pública
 
-Desde un enfoque en Evasión Ética y de Disponibilidad: Desarrollar un protocolo de web scraping basado en técnicas de sigilo (Stealth) y rotación de agentes de usuario, con el fin de recolectar datos sin comprometer la disponibilidad de los servicios de la página destino, cumpliendo con las directivas del archivo robots.txt y los estándares éticos de la ciberseguridad.
+Evasión Ética y de Disponibilidad: Desarrollar un protocolo de web scraping basado en técnicas de sigilo (Stealth) y rotación de agentes de usuario, con el fin de recolectar datos sin comprometer la disponibilidad de los servicios de la página destino, cumpliendo con las directivas del archivo robots.txt y los estándares éticos de la ciberseguridad.
 
-Desde un punto de vista de Procesamiento Seguro y Sanitización: Establecer un flujo de procesamiento de datos que integre capas de sanitización y validación de esquemas, para eliminar ruido y prevenir la inyección de código malicioso en el almacenamiento final, asegurando que los archivos CSV resultantes sean seguros para su análisis en herramientas de inteligencia de datos.
+Procesamiento Seguro y Sanitización: Establecer un flujo de procesamiento de datos que integre capas de sanitización y validación de esquemas, para eliminar ruido y prevenir la inyección de código malicioso en el almacenamiento final, asegurando que los archivos CSV resultantes sean seguros para su análisis en herramientas de inteligencia de datos.
 
 ## Caso: Scraper Web de Tabla de Posiciones - FastAPI
 
