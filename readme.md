@@ -10,6 +10,7 @@ Aplicación web que realiza web scraping de tablas de posiciones de fútbol desd
 - ✅ Descarga automática de archivo CSV
 - ✅ Manejo de errores y mensajes informativos
 - ✅ Scraping optimizado con BeautifulSoup
+![API SCRAPER INICIADA](./img/scraper/inicio_ejecutada.jpg)
 
 ## Tecnologías
 - **FastAPI**: Framework web moderno y rápido
@@ -37,7 +38,7 @@ Aplicación web que realiza web scraping de tablas de posiciones de fútbol desd
    ```
 
 ## Inicio Rápido
-
+# 
 **Opción 1: Script automático (Windows)**
 ```bash
 # Doble clic en start.bat
