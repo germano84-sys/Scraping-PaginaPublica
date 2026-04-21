@@ -49,6 +49,26 @@ Aplicación web que realiza web scraping de tablas de posiciones de fútbol desd
    pip install -r requirements.txt
    ```
 
+## Ejecución
+
+1. **Ejecutar la aplicación**:
+   ```bash
+   # Usando el script batch (Windows)
+   start.bat
+
+   # O manualmente
+   uvicorn main:app --host 127.0.0.1 --port 8007 --reload
+   ```
+
+2. **Acceder a la aplicación**:
+   Abre tu navegador y ve a `http://127.0.0.1:8007`
+
+3. **Uso**:
+   - En la página principal, ingresa la URL de la página web con la tabla de posiciones (ej. ESPN).
+   - Haz clic en "Scrape" para extraer los datos.
+   - Visualiza la tabla en la interfaz web.
+   - Descarga el archivo CSV usando el botón correspondiente.
+
 ## Inicio Rápido
 # 
 **Opción 1: Script automático (Windows)**
